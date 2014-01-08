@@ -1,0 +1,18 @@
+urltester
+
+This is just a simple python class I've created to expand on what used to be a script 
+before altering server configs be it script versions or apache conf changes or even 
+code changes I would bench the testing machines vs the prod machine to see which would
+spit out the result first. 
+
+This only works on testing http servers as I'm using urllib a future change may be
+to extend this to allow multiple test types such as ping 
+
+see urluser.py for an example of how to use this object
+
+to use on your own system just create a directory and clone
+
+$ mkdir urltester
+$ cd urlteser
+$ git clone git://github.com/gsilvers/urltester.git
+$ have fun and enjoy the code

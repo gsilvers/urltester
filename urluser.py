@@ -12,22 +12,15 @@
 =========================================================================
 """
 
-import Queue
-import threading
-import urllib2
+from urltester import urltester
 
-# called by each thread
-def get_url(q, url):
-    q.put(urllib2.urlopen(url).read())
+myTester = urltester()
 
-theurls = '''http://google.com http://yahoo.com'''.split()
+## Replace Default URLS with List of URLS
+myTester.updateUrlList(['http://www.fooples.com/index.php','http://www.google.com','http://www.github.com'])
 
-q = Queue.Queue()
+## Compare when ready
+myTester.compareUrls()
 
-for u in theurls:
-    t = threading.Thread(target=get_url, args = (q,u))
-    t.daemon = True
-    t.start()
-
-s = q.get()
-print s
+## Get results, threading waiting etc is encapsulated no need to wait or delay
+resData = myTester.getResults()
