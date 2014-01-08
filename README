@@ -16,3 +16,6 @@ $ mkdir urltester
 $ cd urlteser
 $ git clone git://github.com/gsilvers/urltester.git
 $ have fun and enjoy the code
+
+Here's the Code in Use:
+![Alt text](/example.png "Example")
