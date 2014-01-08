@@ -13,7 +13,7 @@ see urluser.py for an example of how to use this object
 to use on your own system just create a directory and clone
 
 $ mkdir urltester
-$ cd urlteser
+$ cd urltester
 $ git clone git://github.com/gsilvers/urltester.git
 $ have fun and enjoy the code
 
